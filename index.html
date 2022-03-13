@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Monthly budget, Budget, Expenses calculator">
+    <meta name="author" content="Manoj Kumar S">
+    <meta name="Description" content="Monthly budget">
+    <title>Monthly budget</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css.css">
+    <script type="text/javascript" src="js.js"></script>
+</head>
+<body>
+    <header>
+        <div> <h1> MONTHLY BUDGET </h1></div>
+    </header>
+    <main>
+        <div><h2 class="thead thead2">MONTH / YEAR</h2></div>
+        <div class="clr"><input type="month" class="int month"></div>
+    
+        <table id="myTable1" class="tborder clr">
+            <div><h2 class="thead thead1">INCOME</h2></div>
+            <tr>
+                <th class="tr1 tr2">SL NO:</th>
+                <th class="th1 tr2 tr1">DESCRIPTION</th>
+                <th class="tr1 tr2">AMOUNT IN ₹ </th>
+            </tr>
+            <tr>
+                <td ><input type="text" name="Sl" value=1 class="int"></td>
+                <td><input type="text" name="Description" class="int"></td>
+                <td><input type="text" name="Amount" class="int"></td>
+            </tr>
+        </table>
+    
+        <p class="ttl"><button onclick="addField1();">Add another field</button> <button onclick="deleteField1();">Clear</button> <button class="Submit" onclick="total1();">Submit</button></p>
+        <p class="ttl"><b>Total income = ₹ <span id="ttl1"></span></b></p>
+    
+        <table id="myTable">
+            <div><h2 class="thead">EXPENSES</h2></div>
+            <tr>
+                <th class="tr1">SL NO:</th>
+                <th class="th1 tr1">DESCRIPTION</th>
+                <th class="tr1">AMOUNT IN ₹</th>
+            </tr>
+            <tr>
+                <td ><input type="text" name="Sl" value=1 class="int"></td>
+                <td><input type="text" name="Description" class="int"></td>
+                <td><input type="text" name="Amount" class="int"></td>
+            </tr>
+        </table>
+
+        <p class="ttl"><button onclick="addField();">Add another field</button> <button onclick="deleteField();">Clear</button> <button class="Submit" onclick="total();">Submit</button></p>
+        <p class="ttl"><b>Total expenses = ₹ <span id="ttl"></span></b></p>
+        <p class="ttl"><b id="ttlnet"></b></p>
+        <p class="ttl"><b id="cnclsn"></b></p>
+        <hr>
+        <canvas id="myChart1" style="width:100%;max-width:600px" class="canvas"></canvas>
+        <canvas id="myChart" style="width:100%;max-width:600px" class="canvas"></canvas>
+    </main>
+</body>
+</html>
