@@ -10,10 +10,10 @@
 body{
     background: linear-gradient(
         100deg,
-        #ffc800,
-        #feee3e,
-        #ffc800,
-        #feee3e
+        #d239ff, 
+        #3ef0fe, 
+        #ffeb00, 
+        #FE7A3C
      );
     height: 100vh;
     background-size: 400% 400% !important;
