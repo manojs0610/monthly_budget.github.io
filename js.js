@@ -1,3 +1,11 @@
+const dateInput = document.getElementById('date-input');
+const currentDate = new Date();
+const currentMonth = (currentDate.getMonth() + 1).toString().padStart(2, '0');
+const currentYear = currentDate.getFullYear().toString();
+
+dateInput.value = `${currentYear}-${currentMonth}`;
+
+
 function addField1 (argument2) {
             
     var myTable2 = document.getElementById("myTable1");
